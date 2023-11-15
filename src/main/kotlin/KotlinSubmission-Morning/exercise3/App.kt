@@ -1,6 +1,6 @@
 package id.infinitelearning.KotlinSubmission.exercise3
 
-fun main() {
+fun main () {
 
     /** Latihan 1
     Buatlah logika if untuk mengevaluasi nilai score dengan ketentuan:
