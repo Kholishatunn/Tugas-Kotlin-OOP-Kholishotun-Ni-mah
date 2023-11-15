@@ -1,7 +1,16 @@
 package id.infinitelearning.KotlinSubmission.exercise5
 
 fun main() {
-
+    val hero = Hero()
+    hero.setProfile(name = "Kholis", age = 22, height = 153)
+    hero.profile()
+    hero.lari()
+    hero.jalan()
+    hero.makan()
+    hero.minum()
+    hero.lompat()
+    hero.duduk()
+}
     /**
      * Latihan 1
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
@@ -73,7 +82,3 @@ fun main() {
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
-
-
-}

@@ -4,7 +4,6 @@ class Hero {
     private var name: String? = null
     private var age = 0
     private var height = 0
-
     private var health = 20
 
     fun setProfile(name: String?, age: Int, height: Int) {
@@ -49,6 +48,30 @@ class Hero {
       Contoh fungsi bisa mengikuti fungsi jalan() diatas.
 
     */
-    
+    fun lari() {
+        checkHealth()
+        println("$name sedang berlari...")
+        health -= 2
+    }
+    fun makan() {
+        checkHealth()
+        println("$name sedang makan...")
+        health += 2
+    }
+    fun minum() {
+        checkHealth()
+        println("$name sedang minum...")
+        health += 2
+    }
+    fun lompat() {
+        checkHealth()
+        println("$name sedang lompat...")
+        health -= 2
+    }
+    fun duduk() {
+        checkHealth()
+        println("$name sedang duduk...")
+        health += 1
+    } 
 }
 

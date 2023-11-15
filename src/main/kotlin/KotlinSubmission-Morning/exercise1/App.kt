@@ -10,7 +10,13 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
-
+    val firstName : String = "Kholishotun"
+    val lastName : String = "Ni'mah"
+    val age: Int = 22
+    val single: Boolean = true
+    println("Name : $firstName $lastName")
+    println("Age : $age")
+    println("Single : $single")
 }
 
 
@@ -19,6 +25,9 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
+    println("Group ID  : $groupId")
+    println("Group Members : $groupMember")
+    println("Session: $session")
     return ""
 }
 
@@ -29,8 +38,8 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  *
  */
 fun myTeam(): List<Any> {
-
-    return listOf()
+    val groupMembers = listOf("Kholishotun Ni'mah", "Faiz Ridho", "Aulia Wira Yudha", "Yudha Yuliarta Perdana", "Yolanda")
+    return groupMembers
 }
 
 /**
@@ -41,10 +50,10 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf<String>("Reynaldi", "Malik")
+    val countOfGroup = arrayOf<String>("Kholis", "faiz", "Yudha 1", "Yudha 2", "Yola")
 
-    return 0
+    return mentor.size + countOfGroup.size
 }
 
 fun main() {
@@ -62,6 +71,6 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("Synchronize", listOf("Kholishotun Ni'mah", "Faiz Ridho", "Aulia Wira Yudha", "Yudha Yuliarta Perdana", "Yolanda"), "Morning")
 
 }

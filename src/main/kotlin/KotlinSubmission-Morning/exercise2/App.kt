@@ -9,7 +9,10 @@ fun main() {
     - Agar lebih mudah, gunakanlah for loop dan logika if untuk mengisi bilangan genap pada list
      */
     // Buat di bawah sini
-
+    println("====Bilangan Genap 1 sampai 100====")
+    for (x: Int in 1 .. 100)
+        if (x % 2 ==0)
+            println("$x")
 
     /** Latihan 2 Map
     Buatlah variabel bertipe Map dengan kriteria:
@@ -30,6 +33,26 @@ fun main() {
     - "It's {$monthNow} now, I was born in {$birthMonth}"
      */
     // Buat di bawah sini
+    val map = mapOf(
+        "Jan" to "Januari",
+        "Feb" to "Februari",
+        "Mar" to "Maret",
+        "Apr" to "April",
+        "Mei" to "Mei",
+        "Jun" to "Juni",
+        "Jul" to "Juli",
+        "Ags" to "Agustus",
+        "Sep" to "September",
+        "Okt" to "Oktober",
+        "Nov" to "November",
+        "Des" to "desember"
+    )
+    map.forEach { (key, value) ->
+        println("$key -> $value")
+    }
 
-
+    val monthNow: String = "November"
+    val birthMonth: String = "Oktober"
+    println("It's $monthNow now,")
+    println("I was born in $birthMonth")
 }
