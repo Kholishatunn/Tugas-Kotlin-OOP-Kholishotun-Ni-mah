@@ -56,8 +56,9 @@ fun totalMember(): Int {
     return mentor.size + countOfGroup.size
 }
 
-fun main() {
 
+fun main ()
+{
     myProfile()
 
     val myTeam = myTeam()

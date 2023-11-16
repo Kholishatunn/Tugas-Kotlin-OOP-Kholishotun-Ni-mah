@@ -1,6 +1,6 @@
 package id.infinitelearning.KotlinSubmission.exercise3
 
-fun main () {
+
 
     /** Latihan 1
     Buatlah logika if untuk mengevaluasi nilai score dengan ketentuan:
@@ -16,6 +16,7 @@ fun main () {
     - Isi variabel result dengan nilai: 'Anda mendapatkan nilai E.'
      */
     // Buat di bawah sini
+    fun main() {
     val score = 75
 
     var result = ""
